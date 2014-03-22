@@ -1,0 +1,68 @@
+	body {
+			font: 100%/1.5 arial, helvetica, sans-serif;
+			color: #990000;
+			background-color: #FFFFFF;
+			background: -webkit-linear-gradient(left,rgba(0,0,200,.9), rgba(0,0,125,.5), rgba(0,0,200,1), rgba(0,0,255,1)); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(right, rgba(0,0,200,.9), rgba(0,0,125,.5), rgba(0,0,200,1), rgba(0,0,255,1)); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(right, rgba(0,0,200,.9), rgba(0,0,125,.5), rgba(0,0,200,1), rgba(0,0,255,1)); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(to right, rgba(0,0,200,.9), rgba(0,0,125,.5), rgba(0,0,200,1), rgba(0,0,255,1)); /* Standard syntax (must be last) */
+		}
+		
+		#outer {
+			width: 1000px;
+			margin: auto;
+			background-color: #F9FBF0;
+			padding-bottom:50px;
+			border-radius:50px;
+			box-shadow: 10px 10px 25px #000000;
+			padding-top: 15px;
+  	}
+ 	
+		#bonusform {
+			width: 300px;
+			position: relative;
+			left: 330px;
+			background-color: #A6CAED;
+			border-radius:10px;
+			box-shadow: 5px 5px 5px #889988;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 5px;
+			color: black;
+		}
+  	#linkcenter {
+  		text-align: center;	
+  		font: 120%/.8 arial, helvetica, sans-serif;
+  	}
+		#commentform {
+			width: 320px;
+			position: relative;
+			background-color: #A6CAED;
+			border-radius:10px;
+			box-shadow: 5px 5px 5px #889988;
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-bottom: 5px;
+			left: 320px;
+			color: black;
+		}			  	
+	h1,h2 {
+			text-align: center;
+			color: #990000;
+		}
+	small {
+			color: red;
+		}
+		
+		h5 {
+			text-align: center;
+		}
+		
+				
+		div p {
+			margin:30px 40px;
+			font: 100%/1.5 arial, helvetica, sans-serif;
+			color: black;
+		}
+
+		

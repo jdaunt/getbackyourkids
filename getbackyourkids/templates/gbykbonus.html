@@ -1,0 +1,19 @@
+{% include 'header.html' %}
+
+<body>
+	<div id="outer">
+		<p id="linkcenter"><iframe src="http://www.youtube.com/embed/Iitp5Xh6bMM" name="iframe_a" height="200"></iframe></p>
+		<h1><a href="http://www.youtube.com/embed/Iitp5Xh6bMM" target="iframe_a">Bonus Video</a></h1>
+		<div id="commentform">	
+			<form action="/gbykcomments/" method="post">{% csrf_token %}
+				<h2> Comments </h2>
+				<h3><label for="name">  Name: </label><input name="name" id="name" maxlength="50" required value="{{ contact_name }}">{% if error1 %}<small><small>{{ error1 }}</small></small>{% endif %}<br>
+				<label for="email">  Email: </label> <input name="email" type="email" id="email" maxlength="50" required value="{{ contact_email }}">{% if error2 %}<small><small>{{ error2 }}</small></small>{% endif %}<br>
+				<textarea rows="10" cols="40" name="message" id="message" maxlength="2000" required>{{ contact_comments }}</textarea>{% if error3 %}<small><small>{{ error3 }}</small></small>{% endif %}
+				</h3>
+				<h1><input type="submit" value="  Submit  " style="font-size:20px"></h1>
+			</form>
+		</div><p></p></div>	
+</body>
+
+</html>

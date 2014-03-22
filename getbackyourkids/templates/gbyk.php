@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Get Back Your Kids</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<?php
+// Create connection
+$con=mysqli_connect('gbykuser.db.12389615.hostedresource.com', 'gbykuser', 'DMNInc88!', 'gbykuser');
+
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+else
+	{
+	mysqli_query($con,"UPDATE Counters SET PageHitCount = PageHitCount + 1");
+	mysqli_close($con);
+	}
+?>
+
+<body>
+	<div id="outer">
+		<h1>Get Back Your Kids</h1>
+		<p>I have put together this video series to help others. As a parent who has gone through a challenging divorce and did not have a lot of access to my children for several years, these are the lessons I learned and wish I knew from the beginning.</p>
+		<p>This is not about the legal aspects, though I was self represented for the most part simply because of the cost. I did spend a lot of time learning the law and procedures and as time went on I was able to represent myself effectively in court. However there was a lot more going on then what was happening in court. Yes, how I showed up in court was quite important, even more important though was how I showed up everytime I was with my children.</p>
+		<p>So this is more about the psychology, and the things I needed to learn in order to restore my relationships not only with my children but also with myself. Breaking up may be hard to do, but divorce with children is a whole different challenge. If not done right, with sensitivity and cooperation, it can be a very traumatic experience for all involved, especially children. Given that divorce is a result of a breakdown of a relationship, cooperation and sensitivity are all too often left out of the divorce process.</p>
+		<p>There are things I believe one can unilaterally do to improve the situation regardless of the actions of others. I had very little help in this area as I went through the divorce process, which for me ended up being lengthy and at times emotionally draining. These videos are simply lessons I wish to share in the hope that you will navigate through the changes brought about by divorce easier.</p>		
+		<p id="linkcenter"><iframe src="http://www.youtube.com/embed/V_27_E3uNIk" name="iframe_a" height="200"></iframe></p>
+		<p id="linkcenter"><a href="http://www.youtube.com/embed/V_27_E3uNIk" target="iframe_a">Video1</a></p>
+		<p id="linkcenter"><a href="http://www.youtube.com/embed/VvThmwukaMk" target="iframe_a">Video2</a></p>
+		<p id="linkcenter"><a href="http://www.youtube.com/embed/DoNt8gETyM0" target="iframe_a">Video3</a></p>
+		<p>I do welcome feedback and there is a comment form in the bonus video section. I am interested in knowing if these videos were helpful to you. I am open to going deeper into this area and maybe even writing a book if this is of benefit to others.</p>
+		<div id="bonusform">	
+			<form action="gbykbonus.php" method="post">
+				<h2> Bonus Video </h2>
+				<h3><label for="name">  Name: </label>
+				<input name="name" id="name" maxlength="50" required><br>
+				<label for="email">  Email: </label>
+				<input type="email" name="email" id="email" maxlength="50" required>
+				</h3>
+				<h1><input type="submit" value="  Submit  " style="font-size:20px"></h1>	
+			</form>
+		</div>
+	</div>	
+</body>
+</html>
